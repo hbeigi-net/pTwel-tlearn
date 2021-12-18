@@ -1,0 +1,39 @@
+@font-face {
+  font-family: mikhak;
+  src: url("../refs/mikhak/Mikhak-VF-FD[wght,KSHD,DSTY].woff2") format("woff2"); }
+
+body {
+  font-family: mikhak; }
+
+.link-custom-1 {
+  z-index: 10;
+  color: #f0f0f0; }
+  .link-custom-1:hover {
+    color: #f0f0f0; }
+
+.list-style-one::before {
+  content: "";
+  position: absolute;
+  bottom: -98%;
+  left: 0;
+  border-top: 1px solid #f0f0f0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(67, 97, 238, 0.5);
+  transition: all 402ms ease;
+  -webkit-transition: all 402ms ease;
+  -moz-transition: all 402ms ease;
+  -ms-transition: all 402ms ease;
+  -o-transition: all 402ms ease; }
+
+.list-style-one:hover::before {
+  bottom: 0; }
+
+#header {
+  position: relative;
+  overflow: hidden !important;
+  height: 90vh;
+  background: url("../images/landing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
