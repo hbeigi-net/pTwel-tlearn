@@ -2,169 +2,515 @@
 <html lang="fa" dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/refs/bs-5/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="./assets/refs/fa-5/all.min.css">
-    <link rel="stylesheet" href="./assets/styles/main.css">
-    <link rel="stylesheet" href="./assets/styles/resp.css">
-    <title>hinet.net</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/refs/bs-5/bootstrap.rtl.min.css">
+        <link rel="stylesheet" href="./assets/refs/fa-5/all.min.css">
+        <link rel="stylesheet" href="./assets/styles/main.css">
+        <link rel="stylesheet" href="./assets/styles/resp.css">
+        <title>hinet.net</title>
 </head>
 
 <body>
-    <header id="header" class="position-relative">
-        <div id="navigations" class="position-absolute container-fluid top-0   mx-auto px-lg-4 py-lg-2  d-flex justify-content-between 
-        align-items-end">
-            <div class="d-lg-none" id="small_screen_nav_toggler">
+        <div class="overlay"></div>
+        <header id="header" class="position-relative">
+                <div id="navigations"
+                        class="position-absolute container-fluid top-0   mx-auto px-5 px-md-5 py-2 px-lg-4 py-lg-2  d-flex justify-content-between align-items-end">
+                        <div class="d-lg-none" id="small_screen_nav_toggler">
+                                <i class="fas fa-bars fs-3  "></i>
+                        </div>
+                        <div id="lg_screen_navbar" class="d-none d-lg-block">
+                                <ul class="list-unstyled d-flex m-0">
+                                        <li
+                                                class=" px-4 pt-1 pb-2  position-relative overflow-hidden list-style-one active">
+                                                <a href="#" class="text-decoration-none d-block link-custom-1">خانه</a>
+                                        </li>
+                                        <li class=" px-4 pt-1 pb-2  position-relative overflow-hidden list-style-one"><a
+                                                        href="#"
+                                                        class="text-decoration-none d-block link-custom-1">خدمات ما</a>
+                                        </li>
+                                        <li class=" px-4 pt-1 pb-2  position-relative overflow-hidden list-style-one"><a
+                                                        href="#"
+                                                        class="text-decoration-none d-block link-custom-1">مدرسین</a>
+                                        </li>
+                                        <li class=" px-4 pt-1 pb-2  position-relative overflow-hidden list-style-one"><a
+                                                        href="#"
+                                                        class="text-decoration-none d-block link-custom-1">درباره ما</a>
+                                        </li>
+                                        <li class=" px-4 pt-1 pb-2  position-relative overflow-hidden list-style-one"><a
+                                                        href="#"
+                                                        class="text-decoration-none d-block link-custom-1">همکاری با
+                                                        ما</a></li>
+                                </ul>
+                        </div>
+                        <div id="site_brand" class="d-flex align-items-center">
+                                <p class="my-0 mx-3"><a href="#" class="text-decoration-none link-light">ورود</a> / <a
+                                                href="#" class="text-decoration-none link-light">ثبت نام</a> </p>
+                                <img src="./assets/images/logo.png" width="80px" class="img-fluid" alt="">
+                        </div>
 
-            </div>
-            <div id="lg_screen_navbar" class="d-none d-lg-block">
-                <ul class="list-unstyled d-flex m-0">
-                    <li class=" px-4 pt-1 pb-2  position-relative overflow-hidden list-style-one active"><a href="#"
-                            class="text-decoration-none d-block link-custom-1">خانه</a></li>
-                    <li class=" px-4 pt-1 pb-2  position-relative overflow-hidden list-style-one"><a href="#"
-                            class="text-decoration-none d-block link-custom-1">خدمات ما</a></li>
-                    <li class=" px-4 pt-1 pb-2  position-relative overflow-hidden list-style-one"><a href="#"
-                            class="text-decoration-none d-block link-custom-1">مدرسین</a></li>
-                    <li class=" px-4 pt-1 pb-2  position-relative overflow-hidden list-style-one"><a href="#"
-                            class="text-decoration-none d-block link-custom-1">درباره ما</a></li>
-                    <li class=" px-4 pt-1 pb-2  position-relative overflow-hidden list-style-one"><a href="#"
-                            class="text-decoration-none d-block link-custom-1">همکاری با ما</a></li>
-                </ul>
-            </div>
-            <div id="site_brand" class="d-flex align-items-center">
-                <p class="my-0 mx-3"><a href="#" class="text-decoration-none link-light">ورود</a> / <a href="#" class="text-decoration-none link-light">ثبت نام</a> </p>
-                <img src="./assets/images/logo.png" width="80px" class="img-fluid" alt="">
-            </div>
+                        <div id="sm_screen_navbar"
+                                class="d-lg-none d-flex flex-column  justify-content-start  position-fixed top-0 bottom-0">
 
-            <div id="sm_screen_navbar" class="d-lg-none">
-
-            </div>
-        </div>
-        <div id="header_insider"
-            class="position-relative d-flex h-100 flex-column align-items-center justify-content-center  col-11 col-md-9 col-lg-7 mx-auto text-white">
-            <h2 class="mb-3 mt-5 fs-4 text-center">
-                خودآموزی ، کسب تجربه ، ورود به بازار کار با تاپ لرن با کمترینــــ هزینه خودت حرفه ایــــ یاد بگیـر
-            </h2>
-            <form action="#" method="get" class="position-relative mt-2 w-50 mx-auto p-2 rounded-pill ">
-                <input type="text"  class="form-control rounded-pill shadow-none " id= "header_search" placeholder="جست و جو ...">
-                <button type="submit" class="bg-transparent border-0 position-absolute"> <i class="fa fa-search" aria-hidden="true"></i> </button>
-            </form>
-            <div class="row mt-1  p-3 ">
-                <div class="col-4 p-3 text-center">
-                    <img src="./assets/images/stat-student.svg" width="100px" class="" alt="">
-                    <p class="my-2 w-100">1234</p>
-                    <p class="my-2 w-100" >نفر دانشجو</p>
-                </div>
-                <div class="col-4 p-3 text-center">
-                    <img src="./assets/images/stat-time.svg" width="100px" class="" alt="">
-                    <p class="my-2 w-100">1234</p>
-                    <p class="my-2 w-100" >ساعت آموزش</p>
-                </div>
-                <div class="col-4 p-3 text-center">
-                    <img src="./assets/images/stat-teacher.svg" width="100px" class="" alt="">
-                    <p class="my-2 w-100">1234</p>
-                    <p class="my-2 w-100" >مدرس مجرب</p>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section id = "access_menu">
-        <div class="d-flex justify-content-between align-items-center">
-            <ul id="menu_access" class="d-flex list-unstyled m-0">
-                <li class="px-3 py-2 position-relative"><a href="#" class="text-decoration-none link-custom-2 d-flex align-items-center "> طراحی وب <i class="fas fs-6 mx-2 fa-chevron-down"></i></a>
-                
-                    <div class="drop-menu position-absolute">
-                        <ul class=" m-0 ps-2 list-unstyled ">
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> پایتون </a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> جاوا</a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> پی اچ پی </a></li>
-                            <li class="my-2 list-style-two position-relative"><a href="#" class="text-decoration-none link-custom-3"> جاوا اسکیریپت 
-
-                                <div class="drop-menu-insider p-2 position-absolute">
-                                    <div class="drop-content">
-                                        <ul class=" m-0 ps-2 list-unstyled ">
-                                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> jquery </a></li>
-                                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> node js</a></li>
-                                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> react </a></li>
-                                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3">anqular </a></li>
-                                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> vue js</a></li>
-                                        </ul>
-                                    </div>
+                                <div id="off_header" class="d-flex justify-content-between align-items-center">
+                                        <h1 class=" fs-3 text-white mt-3 mb-3">آکادمی آرین</h1>
+                                        <div id="off_closer">
+                                                <i class="fas fa-times-circle   fs-4   "></i>
+                                        </div>
                                 </div>
-                            </a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> پرل</a></li>
+
+                                <ul class="list-unstyled m-0 ">
+                                        <li
+                                                class=" text-start  w-100 pt-1 pb-2  position-relative overflow-hidden list-style-three">
+                                                <a href="#" class="text-decoration-none d-block link-custom-1">خانه</a>
+                                        </li>
+                                        <li
+                                                class=" text-start  w-100 pt-1 pb-2  position-relative overflow-hidden list-style-three">
+                                                <a href="#" class="text-decoration-none d-block link-custom-1">خدمات
+                                                        ما</a></li>
+                                        <li
+                                                class=" text-start  w-100 pt-1 pb-2  position-relative overflow-hidden list-style-three">
+                                                <a href="#"
+                                                        class="text-decoration-none d-block link-custom-1">مدرسین</a>
+                                        </li>
+                                        <li
+                                                class=" text-start  w-100 pt-1 pb-2  position-relative overflow-hidden list-style-three">
+                                                <a href="#" class="text-decoration-none d-block link-custom-1">درباره
+                                                        ما</a></li>
+                                        <li
+                                                class=" text-start  w-100 pt-1 pb-2  position-relative overflow-hidden list-style-three">
+                                                <a href="#" class="text-decoration-none d-block link-custom-1">همکاری با
+                                                        ما</a></li>
+                                </ul>
+
+                                <h5 class="fs-5 text-info border-bottom border-white pb-2 my-3">منوی دسترسی</h3>
+
+                                        <ul class=" list-unstyled m-0">
+                                                <li class="list-style-three py-2 position-relative"><a href="#"
+                                                                class="text-decoration-none link-custom-2  d-flex align-items-center ">
+                                                                طراحی وب <i
+                                                                        class="fas fs-6 ms-auto fa-chevron-down"></i></a>
+
+                                                        <div class="drop-menu position-absolute">
+                                                                <ul class=" m-0 ps-2 list-unstyled ">
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        پایتون </a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        جاوا</a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        پی
+                                                                                        اچ پی </a></li>
+                                                                        <li
+                                                                                class="my-2 list-style-two position-relative">
+                                                                                <a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        جاوا اسکیریپت
+
+                                                                                        <div
+                                                                                                class="drop-menu-insider p-2 position-absolute">
+                                                                                                <div
+                                                                                                        class="drop-content">
+                                                                                                        <ul
+                                                                                                                class=" m-0 ps-2 list-unstyled ">
+                                                                                                                <li
+                                                                                                                        class="my-2 list-style-two">
+                                                                                                                        <a href="#"
+                                                                                                                                class="text-decoration-none link-custom-3">
+                                                                                                                                jquery
+                                                                                                                        </a>
+                                                                                                                </li>
+                                                                                                                <li
+                                                                                                                        class="my-2 list-style-two">
+                                                                                                                        <a href="#"
+                                                                                                                                class="text-decoration-none link-custom-3">
+                                                                                                                                node
+                                                                                                                                js</a>
+                                                                                                                </li>
+                                                                                                                <li
+                                                                                                                        class="my-2 list-style-two">
+                                                                                                                        <a href="#"
+                                                                                                                                class="text-decoration-none link-custom-3">
+                                                                                                                                react
+                                                                                                                        </a>
+                                                                                                                </li>
+                                                                                                                <li
+                                                                                                                        class="my-2 list-style-two">
+                                                                                                                        <a href="#"
+                                                                                                                                class="text-decoration-none link-custom-3">anqular
+                                                                                                                        </a>
+                                                                                                                </li>
+                                                                                                                <li
+                                                                                                                        class="my-2 list-style-two">
+                                                                                                                        <a href="#"
+                                                                                                                                class="text-decoration-none link-custom-3">
+                                                                                                                                vue
+                                                                                                                                js</a>
+                                                                                                                </li>
+                                                                                                        </ul>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                </a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        پرل</a></li>
+                                                                </ul>
+                                                        </div>
+
+
+                                                </li>
+                                                <li class="list-style-three py-2 position-relative"><a href="#"
+                                                                class="text-decoration-none link-custom-2 d-flex align-items-center ">برنامه
+                                                                نویسی <i
+                                                                        class="fas fs-6 ms-auto fa-chevron-down"></i></a>
+
+                                                        <div class="drop-menu position-absolute">
+                                                                <ul class=" m-0 ps-2 list-unstyled ">
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        پایتون </a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        جاوا</a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        پی
+                                                                                        اچ پی </a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        پرل
+                                                                                </a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        جاوا
+                                                                                        اسکیریپت</a></li>
+                                                                </ul>
+                                                        </div>
+
+                                                </li>
+                                                <li class="list-style-three py-2 position-relative"><a href="#"
+                                                                class="text-decoration-none link-custom-2 d-flex align-items-center ">بانک
+                                                                اطلاعاتی<i
+                                                                        class="fas fs-6 ms-auto fa-chevron-down"></i></a>
+
+                                                        <div class="drop-menu position-absolute">
+                                                                <ul class=" m-0 ps-2 list-unstyled ">
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        mongo db</a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        sql
+                                                                                </a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        node
+                                                                                        js </a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        sql
+                                                                                        server</a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        php
+                                                                                </a></li>
+                                                                </ul>
+                                                        </div>
+
+                                                </li>
+                                                <li class="list-style-three py-2 position-relative"><a href="#"
+                                                                class="text-decoration-none link-custom-2 d-flex align-items-center ">گرافیک<i
+                                                                        class="fas fs-6 ms-auto fa-chevron-down"></i></a>
+
+                                                        <div class="drop-menu position-absolute">
+                                                                <ul class=" m-0 ps-2 list-unstyled ">
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        پایتون </a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        جاوا</a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        پی
+                                                                                        اچ پی </a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        پرل
+                                                                                </a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        جاوا
+                                                                                        اسکیریپت</a></li>
+                                                                </ul>
+                                                        </div>
+
+                                                </li>
+                                                <li class="list-style-three py-2 position-relative"><a href="#"
+                                                                class="text-decoration-none link-custom-2 d-flex align-items-center ">تحت
+                                                                ویندوز<i
+                                                                        class="fas fs-6 ms-auto fa-chevron-down"></i></a>
+
+                                                        <div class="drop-menu position-absolute">
+                                                                <ul class=" m-0 ps-2 list-unstyled ">
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        پایتون </a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        جاوا</a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        پی
+                                                                                        اچ پی </a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        پرل
+                                                                                </a></li>
+                                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                                        class="text-decoration-none link-custom-3">
+                                                                                        جاوا
+                                                                                        اسکیریپت</a></li>
+                                                                </ul>
+                                                        </div>
+
+
+                                                </li>
+                                        </ul>
+
+                                        <ul class="list-unstyled mt-auto d-flex mx-auto">
+                                                <li class="mx-2 list-style-three"><a href=""
+                                                                class="text-decoration-none  fs-4 "><i
+                                                                        class="fab fa-instagram    "></i></a></li>
+                                                <li class="mx-2 list-style-three"><a href=""
+                                                                class="text-decoration-none  fs-4 "><i
+                                                                        class="fab fa-telegram    "></i></a></li>
+                                                <li class="mx-2 list-style-three"><a href=""
+                                                                class="text-decoration-none  fs-4 "><i
+                                                                        class="fab fa-youtube   "></i></a></li>
+                                                <li class="mx-2 list-style-three"><a href=""
+                                                                class="text-decoration-none  fs-4 "><i
+                                                                        class="fab fa-linkedin    "></i></a></li>
+                                        </ul>
+                        </div>
+                </div>
+                <div id="header_insider"
+                        class="position-relative d-flex h-100 flex-column align-items-center justify-content-center  col-11 col-md-9 col-lg-7 mx-auto text-white">
+                        <h2 class="mb-3 mt-5 fs-4 text-center">
+                                خودآموزی ، کسب تجربه ، ورود به بازار کار با تاپ لرن با کمترینــــ هزینه خودت حرفه ایــــ
+                                یاد بگیـر
+                        </h2>
+                        <form action="#" method="get" class="position-relative mt-2 w-50 mx-auto p-2 rounded-pill ">
+                                <input type="text" class="form-control rounded-pill shadow-none " id="header_search"
+                                        placeholder="جست و جو ...">
+                                <button type="submit" class="bg-transparent border-0 position-absolute"> <i
+                                                class="fa fa-search" aria-hidden="true"></i> </button>
+                        </form>
+                        <div class="row mt-1  p-3 ">
+                                <div class="col-4 p-3 text-center">
+                                        <img src="./assets/images/stat-student.svg" width="100px" class="" alt="">
+                                        <p class="my-2 w-100">1234</p>
+                                        <p class="my-2 w-100">نفر دانشجو</p>
+                                </div>
+                                <div class="col-4 p-3 text-center">
+                                        <img src="./assets/images/stat-time.svg" width="100px" class="" alt="">
+                                        <p class="my-2 w-100">1234</p>
+                                        <p class="my-2 w-100">ساعت آموزش</p>
+                                </div>
+                                <div class="col-4 p-3 text-center">
+                                        <img src="./assets/images/stat-teacher.svg" width="100px" class="" alt="">
+                                        <p class="my-2 w-100">1234</p>
+                                        <p class="my-2 w-100">مدرس مجرب</p>
+                                </div>
+                        </div>
+                </div>
+        </header>
+        <section id="access_menu" class=" d-none d-lg-block">
+                <div class=" d-lg-flex justify-content-between align-items-center">
+                        <ul id="menu_access" class=" list-unstyled m-0 d-flex ">
+                                <li class="px-3 py-2 position-relative"><a href="#"
+                                                class="text-decoration-none link-custom-2 d-flex align-items-center ">
+                                                طراحی وب <i class="fas fs-6 mx-2 fa-chevron-down"></i></a>
+
+                                        <div class="drop-menu position-absolute">
+                                                <ul class=" m-0 ps-2 list-unstyled ">
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3">
+                                                                        پایتون </a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3">
+                                                                        جاوا</a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> پی
+                                                                        اچ پی </a></li>
+                                                        <li class="my-2 list-style-two position-relative"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> جاوا
+                                                                        اسکیریپت
+
+                                                                        <div
+                                                                                class="drop-menu-insider p-2 position-absolute">
+                                                                                <div class="drop-content">
+                                                                                        <ul
+                                                                                                class=" m-0 ps-2 list-unstyled ">
+                                                                                                <li
+                                                                                                        class="my-2 list-style-two">
+                                                                                                        <a href="#"
+                                                                                                                class="text-decoration-none link-custom-3">
+                                                                                                                jquery
+                                                                                                        </a></li>
+                                                                                                <li
+                                                                                                        class="my-2 list-style-two">
+                                                                                                        <a href="#"
+                                                                                                                class="text-decoration-none link-custom-3">
+                                                                                                                node
+                                                                                                                js</a>
+                                                                                                </li>
+                                                                                                <li
+                                                                                                        class="my-2 list-style-two">
+                                                                                                        <a href="#"
+                                                                                                                class="text-decoration-none link-custom-3">
+                                                                                                                react
+                                                                                                        </a></li>
+                                                                                                <li
+                                                                                                        class="my-2 list-style-two">
+                                                                                                        <a href="#"
+                                                                                                                class="text-decoration-none link-custom-3">anqular
+                                                                                                        </a></li>
+                                                                                                <li
+                                                                                                        class="my-2 list-style-two">
+                                                                                                        <a href="#"
+                                                                                                                class="text-decoration-none link-custom-3">
+                                                                                                                vue
+                                                                                                                js</a>
+                                                                                                </li>
+                                                                                        </ul>
+                                                                                </div>
+                                                                        </div>
+                                                                </a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3">
+                                                                        پرل</a></li>
+                                                </ul>
+                                        </div>
+
+
+                                </li>
+                                <li class="px-3 py-2 position-relative"><a href="#"
+                                                class="text-decoration-none link-custom-2 d-flex align-items-center ">برنامه
+                                                نویسی <i class="fas fs-6 mx-2 fa-chevron-down"></i></a>
+
+                                        <div class="drop-menu position-absolute">
+                                                <ul class=" m-0 ps-2 list-unstyled ">
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3">
+                                                                        پایتون </a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3">
+                                                                        جاوا</a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> پی
+                                                                        اچ پی </a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> پرل
+                                                                </a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> جاوا
+                                                                        اسکیریپت</a></li>
+                                                </ul>
+                                        </div>
+
+                                </li>
+                                <li class="px-3 py-2 position-relative"><a href="#"
+                                                class="text-decoration-none link-custom-2 d-flex align-items-center ">بانک
+                                                اطلاعاتی<i class="fas fs-6 mx-2 fa-chevron-down"></i></a>
+
+                                        <div class="drop-menu position-absolute">
+                                                <ul class=" m-0 ps-2 list-unstyled ">
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3">
+                                                                        mongo db</a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> sql
+                                                                </a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> node
+                                                                        js </a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> sql
+                                                                        server</a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> php
+                                                                </a></li>
+                                                </ul>
+                                        </div>
+
+                                </li>
+                                <li class="px-3 py-2 position-relative"><a href="#"
+                                                class="text-decoration-none link-custom-2 d-flex align-items-center ">گرافیک<i
+                                                        class="fas fs-6 mx-2 fa-chevron-down"></i></a>
+
+                                        <div class="drop-menu position-absolute">
+                                                <ul class=" m-0 ps-2 list-unstyled ">
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3">
+                                                                        پایتون </a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3">
+                                                                        جاوا</a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> پی
+                                                                        اچ پی </a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> پرل
+                                                                </a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> جاوا
+                                                                        اسکیریپت</a></li>
+                                                </ul>
+                                        </div>
+
+                                </li>
+                                <li class="px-3 py-2 position-relative"><a href="#"
+                                                class="text-decoration-none link-custom-2 d-flex align-items-center ">تحت
+                                                ویندوز<i class="fas fs-6 mx-2 fa-chevron-down"></i></a>
+
+                                        <div class="drop-menu position-absolute">
+                                                <ul class=" m-0 ps-2 list-unstyled ">
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3">
+                                                                        پایتون </a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3">
+                                                                        جاوا</a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> پی
+                                                                        اچ پی </a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> پرل
+                                                                </a></li>
+                                                        <li class="my-2 list-style-two"><a href="#"
+                                                                        class="text-decoration-none link-custom-3"> جاوا
+                                                                        اسکیریپت</a></li>
+                                                </ul>
+                                        </div>
+
+
+                                </li>
                         </ul>
-                    </div>
-                
-                
-                </li>
-                <li class="px-3 py-2 position-relative"><a href="#" class="text-decoration-none link-custom-2 d-flex align-items-center ">برنامه نویسی <i class="fas fs-6 mx-2 fa-chevron-down"></i></a>
-                    
-                    <div class="drop-menu position-absolute">
-                        <ul class=" m-0 ps-2 list-unstyled ">
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> پایتون </a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> جاوا</a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> پی اچ پی </a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> پرل </a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> جاوا اسکیریپت</a></li>
-                        </ul>
-                    </div>
-                
-                </li>
-                <li class="px-3 py-2 position-relative"><a href="#" class="text-decoration-none link-custom-2 d-flex align-items-center ">بانک اطلاعاتی<i class="fas fs-6 mx-2 fa-chevron-down"></i></a>
-                
-                    <div class="drop-menu position-absolute">
-                        <ul class=" m-0 ps-2 list-unstyled ">
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> mongo db</a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> sql </a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> node js </a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> sql server</a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> php </a></li>
-                        </ul>
-                    </div>
-                
-                </li>
-                <li class="px-3 py-2 position-relative"><a href="#" class="text-decoration-none link-custom-2 d-flex align-items-center ">گرافیک<i class="fas fs-6 mx-2 fa-chevron-down"></i></a>
-                
-                    <div class="drop-menu position-absolute">
-                        <ul class=" m-0 ps-2 list-unstyled ">
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> پایتون </a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> جاوا</a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> پی اچ پی </a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> پرل </a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> جاوا اسکیریپت</a></li>
-                        </ul>
-                    </div>
-                
-                </li>
-                <li class="px-3 py-2 position-relative"><a href="#" class="text-decoration-none link-custom-2 d-flex align-items-center ">تحت ویندوز<i class="fas fs-6 mx-2 fa-chevron-down"></i></a>
-                    
-                    <div class="drop-menu position-absolute">
-                        <ul class=" m-0 ps-2 list-unstyled ">
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> پایتون </a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> جاوا</a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> پی اچ پی </a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> پرل </a></li>
-                            <li class="my-2 list-style-two"><a href="#" class="text-decoration-none link-custom-3"> جاوا اسکیریپت</a></li>
-                        </ul>
-                    </div>
-                
-                
-                </li>
-            </ul>
-            <div id="vip_access" class="d-flex align-items-center justify-content-between">
-                <p class="mb-0 mx-3">اعضای ویژه</p>
-                <a href=""><img src="./assets/images/goldVip.png" width="50px" class="img-fluid" alt=""></a>
-    
-            </div>
-        </div>
-      
-    </section>
-    <script src="./assets/refs/jquery/jquery-3.6.0.min.js"></script>
-    <script src="./assets/refs/fa-5/all.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+                        <div id="vip_access" class="d-flex align-items-center justify-content-between">
+                                <p class="mb-0 mx-3">اعضای ویژه</p>
+                                <a href=""><img src="./assets/images/goldVip.png" width="50px" class="img-fluid"
+                                                alt=""></a>
+                        </div>
+                </div>
+
+        </section>
+        <script src="./assets/refs/jquery/jquery-3.6.0.min.js"></script>
+        <script src="./assets/refs/fa-5/all.min.js"></script>
+        <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

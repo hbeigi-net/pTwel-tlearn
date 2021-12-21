@@ -8,44 +8,66 @@
 body {
     font-family: mikhak;
     padding-bottom: 1000px;
+    .overlay
+    {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(45, 108, 110, 0.452);
+        z-index: -1;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 432ms ease;
+        -webkit-transition: all 432ms ease;
+        -moz-transition: all 432ms ease;
+        -ms-transition: all 432ms ease;
+        -o-transition: all 432ms ease;
+    }
 }
-
+.show-overlay
+{
+    visibility: visible !important;
+    z-index: 5 !important;
+    opacity: 1 !important;
+}
 // classes
 .link-custom-1 {
     z-index: 10;
     color: $light-color;
+
     &:hover {
         color: $light-color;
     }
 }
-.link-custom-2
-{
+
+.link-custom-2 {
     color: $info-color;
 
-    
+
 }
-.link-custom-3
-{
-    color :$dark-color;
-    &:hover
-    {
+
+.link-custom-3 {
+    color: $dark-color;
+
+    &:hover {
         color: $dark-color;
         letter-spacing: 1px;
     }
+
     transition: all 100ms linear;
     -webkit-transition: all 100ms linear;
     -moz-transition: all 100ms linear;
     -ms-transition: all 100ms linear;
     -o-transition: all 100ms linear;
 }
-.list-style-one
-{
+
+.list-style-one {
     &::before {
         content: "";
         position: absolute;
         bottom: -93%;
         left: 0;
-        border-top: 1px solid transparentize($color: $light-color, $amount: 0.5) ;
+        border-top: 1px solid transparentize($color: $light-color, $amount: 0.5);
         width: 100%;
         height: 100%;
         background-color: transparentize($color: $info-color, $amount: .5);
@@ -55,23 +77,22 @@ body {
         -ms-transition: all 402ms ease;
         -o-transition: all 402ms ease;
     }
+
     &:hover::before {
         bottom: 0;
     }
 
-    &.active
-    {
-        &::before
-        {
-            content: none !important ;
+    &.active {
+        &::before {
+            content: none !important;
         }
-        border-top:1px solid transparentize($color: $light-color, $amount: 0.5)  ;
+
+        border-top:1px solid transparentize($color: $light-color, $amount: 0.5);
     }
 }
-.list-style-two
-{
-    &::before
-    {
+
+.list-style-two {
+    &::before {
         display: inline-block;
         content: "";
         width: 5px;
@@ -79,22 +100,42 @@ body {
         border-radius: 50%;
         background-color: $info-color;
         margin-left: 5px;
-      
+
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
-}
+    }
 }
 
-.z-100
-{
+.list-style-three {
+    a {
+        color: $light-color;
+        transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        -webkit-transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        -moz-transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        -ms-transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        -o-transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+        &:hover {
+            color: #aca9a9;
+        }
+    }
+
+}
+
+.z-100 {
     z-index: 100 !important;
 }
-.z-1000
-{
+
+.z-1000 {
     z-index: 1000 !important;
 }
+
+.nav-show {
+    right: 0px !important;
+}
+
 // sections
 #header {
     position: relative;
@@ -105,15 +146,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    #navigations
-    {
+    #navigations {
         z-index: 100;
     }
-    #site_brand
-    {
+
+    #site_brand {
         position: relative;
-        &::before
-        {
+
+        &::before {
             content: "";
             position: absolute;
             top: 0;
@@ -121,48 +161,149 @@ body {
             width: 50%;
             height: 100%;
         }
-        border-bottom:1px solid transparentize($color: $light-color, $amount: 0.5)  ;
+
+        border-bottom:1px solid transparentize($color: $light-color, $amount: 0.5);
     }
-    #header_insider
-    {
-        form
-        {
+
+    #header_insider {
+        form {
             background-color: transparentize($color: $info-color, $amount: .5);
-            input
-            {
+
+            input {
                 outline: none;
-                &:focus
-                {
+
+                &:focus {
                     outline: none;
                 }
             }
-            button{
+
+            button {
                 top: 18px;
                 left: 20px;
-                &:hover
-                {
-                    color : $info-color;
+
+                &:hover {
+                    color: $info-color;
                 }
-                transition:all 200ms linear ;
-                -webkit-transition:all 200ms linear ;
-                -moz-transition:all 200ms linear ;
-                -ms-transition:all 200ms linear ;
-                -o-transition:all 200ms linear ;
-}
+
+                transition:all 200ms linear;
+                -webkit-transition:all 200ms linear;
+                -moz-transition:all 200ms linear;
+                -ms-transition:all 200ms linear;
+                -o-transition:all 200ms linear;
+            }
         }
+    }
+
+    #sm_screen_navbar {
+        right: -250px;
+        z-index: 1000;
+        padding: 1rem;
+        background-color: $dark-color;
+        width: 250px;
+
+        #off_closer {
+            cursor: pointer;
+            color: $light-color;
+
+            &:hover {
+                color: #aca9a9 !important;
+            }
+
+            transition: all 200ms ease;
+            -webkit-transition: all 200ms ease;
+            -moz-transition: all 200ms ease;
+            -ms-transition: all 200ms ease;
+            -o-transition: all 200ms ease;
+        }
+
+        ul {
+            li {
+                .drop-menu {
+                    transition: all 200ms linear;
+                    opacity: 0;
+                    visibility: hidden;
+                    z-index: -1;
+                    bottom: -130px;
+                    right: 109%;
+                    padding: 5px;
+                    background-color: $dark-color;
+                    box-shadow: 0 0 3px -1px $dark-color;
+                    width: 10rem;
+                    -webkit-transition: all 200ms linear;
+                    -moz-transition: all 200ms linear;
+                    -ms-transition: all 200ms linear;
+                    -o-transition: all 200ms linear;
+
+                    li {
+                        .drop-menu-insider {
+                            transition: all 200ms linear;
+                            opacity: 0;
+                            visibility: hidden;
+                            z-index: -1;
+                            right: 100%;
+                            bottom: -130px;
+                            width: 10rem;
+                            -webkit-transition: all 200ms linear;
+                            -moz-transition: all 200ms linear;
+                            -ms-transition: all 200ms linear;
+                            -o-transition: all 200ms linear;
+
+                            .drop-content {
+                                padding: 5px;
+                                background-color: $dark-color;
+                                box-shadow: 0 0 3px -1px $dark-color;
+                            }
+                        }
+
+                        &:hover>.drop-menu-insider {
+                            opacity: 1;
+                            visibility: visible;
+                            z-index: 1000;
+                        }
+                    }
+                }
+
+                &:hover>.drop-menu {
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 1000;
+                }
+            }
+
+
+        }
+
+        transition: all 432ms ease;
+        -webkit-transition: all 432ms ease;
+        -moz-transition: all 432ms ease;
+        -ms-transition: all 432ms ease;
+        -o-transition: all 432ms ease;
+    }
+
+    #small_screen_nav_toggler {
+        cursor: pointer;
+        color: $light-color;
+
+        &:hover {
+            color: #aca9a9 !important;
+        }
+
+        transition: all 200ms ease;
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
     }
 }
 
-#access_menu
-{
-    padding: .5rem 1rem ;
+#access_menu {
+    padding: .5rem 1rem;
     box-shadow: 0 0 3px -1px $dark-main;
-    #menu_access
-    {
-        li{
-            .drop-menu
-            {
-                transition:all 200ms linear ;
+
+    #menu_access {
+        li {
+            .drop-menu {
+                transition: all 200ms linear;
                 opacity: 0;
                 visibility: hidden;
                 z-index: -1;
@@ -171,44 +312,45 @@ body {
                 background-color: $light-color;
                 box-shadow: 0 0 3px -1px $dark-color;
                 width: 10rem;
-                -webkit-transition:all 200ms linear ;
-                -moz-transition:all 200ms linear ;
-                -ms-transition:all 200ms linear ;
-                -o-transition:all 200ms linear ;
-                li{
-                    .drop-menu-insider 
-                    {
-                        transition:all 200ms linear ;
+                -webkit-transition: all 200ms linear;
+                -moz-transition: all 200ms linear;
+                -ms-transition: all 200ms linear;
+                -o-transition: all 200ms linear;
+
+                li {
+                    .drop-menu-insider {
+                        transition: all 200ms linear;
                         opacity: 0;
                         visibility: hidden;
                         z-index: -1;
                         right: 98%;
                         bottom: -130px;
                         width: 10rem;
-                        -webkit-transition:all 200ms linear ;
-                        -moz-transition:all 200ms linear ;
-                        -ms-transition:all 200ms linear ;
-                        -o-transition:all 200ms linear ;
-                        .drop-content{
+                        -webkit-transition: all 200ms linear;
+                        -moz-transition: all 200ms linear;
+                        -ms-transition: all 200ms linear;
+                        -o-transition: all 200ms linear;
+
+                        .drop-content {
                             background-color: $light-color;
                             box-shadow: 0 0 3px -1px $dark-color;
                         }
                     }
-                    &:hover > .drop-menu-insider
-                    {
+
+                    &:hover>.drop-menu-insider {
                         opacity: 1;
                         visibility: visible;
                         z-index: 1000;
                     }
                 }
-}
-            &:hover > .drop-menu
-            {
+            }
+
+            &:hover>.drop-menu {
                 opacity: 1;
                 visibility: visible;
                 z-index: 1000;
             }
         }
     }
-  
+
 }
