@@ -28,4 +28,31 @@ $(document).ready(function () {
         $("#sm_screen_navbar").removeClass("nav-show");
         $(".overlay").removeClass("show-overlay");
     });
+
+
+    $(".owl-carousel").owlCarousel({
+        rtl:true,
+        loop : true ,
+        dots :false,
+        autoplay : true ,
+        responsive :
+        {
+            0 :
+            {
+                items : 1
+            },
+            576 : 
+            {
+                items : 2
+            },
+            768 :
+            {
+                items : 3
+            },
+            1100 :
+            {
+                items : 4
+            }
+        }
+    })
 });

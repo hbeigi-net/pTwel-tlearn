@@ -135,7 +135,6 @@ body {
 .nav-show {
     right: 0px !important;
 }
-
 // sections
 #header {
     position: relative;
@@ -309,7 +308,7 @@ body {
                 z-index: -1;
                 bottom: -165px;
                 right: 0;
-                background-color: $light-color;
+                background-color:lighten($color:$light-color, $amount: 10) ;
                 box-shadow: 0 0 3px -1px $dark-color;
                 width: 10rem;
                 -webkit-transition: all 200ms linear;
@@ -332,7 +331,7 @@ body {
                         -o-transition: all 200ms linear;
 
                         .drop-content {
-                            background-color: $light-color;
+                            background-color:lighten($color:$light-color, $amount: 10) ;
                             box-shadow: 0 0 3px -1px $dark-color;
                         }
                     }

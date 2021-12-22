@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  #sm_screen_navbar .drop-menu .drop-menu-insider {
+    display: none; } }
+
+@media (max-width: 576px) {
+  #sm_screen_navbar .drop-menu {
+    display: none; }
+  #sm_screen_navbar .list-style-three svg {
+    display: none !important; } }

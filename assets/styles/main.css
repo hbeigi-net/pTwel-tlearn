@@ -216,7 +216,7 @@ body {
     z-index: -1;
     bottom: -165px;
     right: 0;
-    background-color: #f0f0f0;
+    background-color: white;
     box-shadow: 0 0 3px -1px #151616;
     width: 10rem;
     -webkit-transition: all 200ms linear;
@@ -236,7 +236,7 @@ body {
       -ms-transition: all 200ms linear;
       -o-transition: all 200ms linear; }
       #access_menu #menu_access li .drop-menu li .drop-menu-insider .drop-content {
-        background-color: #f0f0f0;
+        background-color: white;
         box-shadow: 0 0 3px -1px #151616; }
     #access_menu #menu_access li .drop-menu li:hover > .drop-menu-insider {
       opacity: 1;
