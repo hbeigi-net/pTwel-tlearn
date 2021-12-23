@@ -3,8 +3,7 @@
   src: url("../refs/mikhak/Mikhak-VF-FD[wght,KSHD,DSTY].woff2") format("woff2"); }
 
 body {
-  font-family: mikhak;
-  padding-bottom: 1000px; }
+  font-family: mikhak; }
   body .overlay {
     position: fixed;
     width: 100vw;
@@ -246,3 +245,6 @@ body {
     opacity: 1;
     visibility: visible;
     z-index: 1000; }
+
+#footer {
+  background-color: #b5179e; }

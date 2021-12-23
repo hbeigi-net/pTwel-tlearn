@@ -7,7 +7,6 @@
 
 body {
     font-family: mikhak;
-    padding-bottom: 1000px;
     .overlay
     {
         position: fixed;
@@ -352,4 +351,9 @@ body {
         }
     }
 
+}
+
+#footer
+{
+    background-color: darken($color: $sec-color, $amount: 0);
 }
